@@ -1,2 +1,1 @@
-# See go/codeowners - automatically generated for confluentinc/terraform-state-s3:
-*	@codyaray
+*	@confluentinc/service-foundations
