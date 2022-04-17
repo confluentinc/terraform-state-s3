@@ -8,9 +8,12 @@ resource "aws_s3_bucket" "terraform" {
     Name        = "${var.s3_bucket_name}"
     Environment = "${var.env}"
   }
+}
 
-  versioning {
-    enabled = true
+resource "aws_s3_bucket_versioning" "bucket_versioning" {
+  bucket = aws_s3_bucket.terraform.id
+  versioning_configuration {
+    status = "Enabled"
   }
 }
 
