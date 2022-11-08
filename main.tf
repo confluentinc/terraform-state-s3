@@ -4,6 +4,10 @@ ii# This is a tf module for managing the s3 bucket and dynamodb table for the te
 
 #testerraform-document
 
+resorce "aws_vpc" "myvpc"
+
+name = "myvpc"
+
 
 #Altaf-####
 
